@@ -1,0 +1,98 @@
+body {
+  font-family: "Young Serif", sans-serif;
+  background-color:  hsl(30, 18%, 87%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5vh;
+  margin: 0;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  max-width: 700px;
+  width: 100%;
+  padding: 20px;
+  text-align: left; 
+  
+}
+
+.banner-image {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.preparation {
+    width: 95%;
+    background-color:  hsl(330, 100%, 98%);
+    padding: 8px 12px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.preparation > h3 {
+    color: hsl(332, 51%, 32%);
+}
+
+.highlight {
+  font-weight: bold;
+  color: black;
+}
+
+.ingredients > h3,
+.instructions > h3,
+.nutrition > h3 {
+    color: hsl(14, 45%, 36%);
+    font-size: 20px;
+}
+
+ul, ol {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+li, p {
+    font-size: 16px;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table td {
+  font-size: 14px;
+  padding: 8px 40px;
+  border-bottom: 1px solid #ccc; 
+}
+
+.table tr:last-child td {
+  border-bottom: none; 
+}
+
+.table td:first-child,
+.table td:last-child {
+  border-left: none;
+  border-right: none;
+}
+
+.table tr:first-child td {
+  border-top: none;
+}
+
+.table .highlight {
+  color: hsl(14, 45%, 36%);
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 90%; 
+  }
+
+  body {
+    padding-top: 0;
+  }
+}
