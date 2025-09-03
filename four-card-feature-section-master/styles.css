@@ -1,0 +1,141 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5vh;
+}
+
+.upper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 35px;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.upper > p{
+    color: rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+}
+
+.upper > * {
+  grid-column: 2 / 3; 
+  text-align: center;
+}
+
+
+.normal-heading {
+  font-weight: 400; 
+  font-size: 2rem;  
+  margin-bottom: 0.1rem;
+}
+
+.bold-heading {
+  font-weight: 600; 
+  font-size: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* equal columns */
+  grid-template-rows: repeat(4, 23%);
+  gap: 35px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.first {
+    border-top: solid 10px hsl(180, 62%, 55%);
+    grid-area: 2 / 1 / 4 / 2;
+}
+
+.second {
+    border-top: solid 10px hsl(0, 78%, 62%);
+    grid-area: 1 / 2 / 3 / 3;
+}
+
+.third {
+    border-top: solid 10px hsl(34, 97%, 64%);
+    grid-area: 3 / 2 / 5 / 3; 
+}
+
+.fourth {
+    border-top: solid 10px hsl(212, 86%, 64%);
+    grid-area: 2/ 3 / 4 / 4;
+}
+
+.card {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 20px;
+  display: grid;
+  width: 85%;
+  margin: 0 auto; 
+  grid-template-rows: auto auto auto;
+}
+
+.text > p {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.2);
+}
+.card > img {
+    margin-left: auto;
+}
+
+@media (max-width: 480px) {
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+  .first,
+  .second,
+  .third,
+  .fourth {
+    grid-area: auto;
+  }
+
+  .card {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .upper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+
+  .normal-heading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+  }
+
+  .bold-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .upper > p {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.2);
+  }
+}
+
