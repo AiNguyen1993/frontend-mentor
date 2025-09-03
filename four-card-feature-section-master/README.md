@@ -1,13 +1,14 @@
-# 🛍️ Product Preview Card Component
+# 🧩 Four Card Feature Section
 
-This is a responsive HTML and CSS project I built to practice layout design, typography, and mobile-first styling.  
-The goal was to create a product card that displays an image, product details, pricing, and a call-to-action button—all styled cleanly and responsively.
+This is a layout-focused HTML and CSS project I built to practice multi-column design and responsive styling.  
+The goal was to create a clean section with four feature cards, each highlighting a different aspect of a service or product.
 
-- Used semantic HTML to structure the card content
-- Applied Flexbox and media queries to make the layout responsive
-- Styled the typography with custom fonts and consistent spacing
-- Designed a hover effect for the button to improve interactivity
-- Focused on visual hierarchy and clean alignment
+- Structured the layout using semantic HTML elements
+- Used Flexbox and media queries to create a responsive grid
+- Styled each card with consistent spacing, shadows, and border accents
+- Applied color-coded borders to visually group the cards
+- Focused on clean typography and visual hierarchy
+
 
 
 
